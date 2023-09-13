@@ -7,7 +7,8 @@ import "./PostCart.css";
 
 function PostCart(data) {
   const { productName, image, _id, productQuantity } = data.data;
-  const serverPublic = process.env.REACT_APP_PUBLIC_FOLDER;
+  // const serverPublic = process.env.REACT_APP_PUBLIC_FOLDER;
+  const serverPublic = "https://m-backend-mzrt.onrender.com/images/";
 
   const addToTheCart = (postId) => {
     if (productQuantity > 0) {
