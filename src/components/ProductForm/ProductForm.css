@@ -1,0 +1,60 @@
+.ProductFormContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.ProductForm {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+  width: 400px;
+  height: 400px;
+}
+@media screen and (max-width: 375px) {
+  .InputItems {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .ProductForm {
+    width: 300px;
+    /* height: 300px; */
+  }
+}
+@media screen and (max-width: 300px) {
+  .InputItems {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+  .ProductForm {
+    width: 250px;
+    /* height: 250px; */
+  }
+}
+.InputItems {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ProductForm label {
+  font-weight: bold;
+}
+
+.ProductForm button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ProductForm button[type="submit"]:hover {
+  background-color: #0056b3;
+}

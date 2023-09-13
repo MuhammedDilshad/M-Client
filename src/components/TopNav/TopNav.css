@@ -1,0 +1,29 @@
+/* .TopNav {
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: red;
+} */
+/* TopNav.css */
+.TopNav {
+  background-color: #21ebd0;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+.TopNav strong {
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px;
+  transition: color 0.2s ease-in-out;
+}
+
+.TopNav strong:hover {
+  color: #ff5733;
+}
