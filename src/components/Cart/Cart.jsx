@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { deletePost, addToCart, clearPost } from "../../Api/postRequest";
-// import { addToCart } from "../../Api/postRequest";
-// import { getPosts } from "../../Api/postRequest";
 
 import Swal from "sweetalert2";
 import "./Cart.css";
@@ -13,9 +11,6 @@ function Cart({ cartItems, products }) {
   const [productTotals, setProductTotals] = useState({});
   const [cartItemList, setCartItemList] = useState([]);
 
-  // const [refreshedRows, setRefreshedRows] = useState([]);
-
-  console.log(cartItems, products, "ahsdgaukwgyedukwy");
   const [modalOpened, setModalOpened] = useState(false);
   const serverPublic = process.env.REACT_APP_PUBLIC_FOLDER;
 
@@ -183,8 +178,6 @@ function Cart({ cartItems, products }) {
                       onClick={() => handleDelete(productId)}
                       className="cart-button"
                     />
-                    {/* <button className="cart-button">Clear Cart</button> */}
-                    {/* <button className="cart-button">Delete</button> */}
                   </td>
                   <td>
                     <button

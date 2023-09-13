@@ -15,8 +15,7 @@ function Displayproducts() {
         console.error("Error fetching data:", error);
       });
   }, [post]);
-  // const serverPublic = "http://localhost:4000/images/";
-  // console.log(serverPublic, "serverPublicOurProducts");
+
   return (
     <div>
       <TopNav />

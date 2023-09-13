@@ -1,10 +1,9 @@
 import axios from "axios";
 
-const API = axios.create({ baseURL: "http://localhost:4000" });
-
-export const uploadImage = (data) => API.post("/upload", data);
+const API = axios.create({ baseURL: "https://m-backend-mzrt.onrender.com" });
 
 export const uploadPost = (data) => API.post("/post", data);
+export const uploadImage = (data) => API.post("/upload", data);
 
 export const getPosts = (id) => {
   return API.get(`/post/${id}`);

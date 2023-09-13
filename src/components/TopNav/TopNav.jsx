@@ -6,7 +6,7 @@ function TopNav() {
   const navigate = useNavigate();
   return (
     <div className="TopNav">
-      <strong onClick={() => navigate("/")}>Add Product</strong>
+      <strong onClick={() => navigate("/addProducts")}>Add Product</strong>
       <strong onClick={() => navigate("/displayProduct")}>
         Display Product
       </strong>
